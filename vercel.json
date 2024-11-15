@@ -2,16 +2,11 @@
     "version": 2,
     "builds": [
       {
-        "src": "main.py",
-        "use": "@vercel/python"
+        "src": "build.sh",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build/web"
+        }
       }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "main.py"
-      }
-    ],
-    "installCommand": "curl -sSL https://install.python-poetry.org | python3 - && poetry install",
-    "buildCommand": "poetry run pygbag dongyeop_game/"
+    ]
   }
