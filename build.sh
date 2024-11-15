@@ -11,4 +11,4 @@ python -m pip install --upgrade pip
 pip install pygbag
 
 # Build
-pygbag dongyeop_game/
+pygbag .
