@@ -8,8 +8,7 @@
     ],
     "routes": [
       {
-        "src": "/",
-        "dest": "/build/web/index.html"
+        "handle": "filesystem"
       },
       {
         "src": "/(.*)",
