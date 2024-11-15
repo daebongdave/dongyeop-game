@@ -2,19 +2,8 @@
     "version": 2,
     "builds": [
       {
-        "src": "build/web/**",
+        "src": "**",
         "use": "@vercel/static"
       }
-    ],
-    "routes": [
-      {
-        "src": "/",
-        "dest": "/build/web/index.html"
-      },
-      {
-        "src": "/(.+)",
-        "dest": "/build/web/$1"
-      }
-    ],
-    "trailingSlash": false
+    ]
   }
